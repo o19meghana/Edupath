@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background:url("edu/economics.jpg");
+            background-size:cover;
+           /* background: url("" );*/
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-bottom: 20px auto;
+           
+        }
+
+        .box {
+             
+            width: 200px;
+            height: 70px;
+            background-color: grey;
+            border: 2px  blue;
+            text-align: center;
+            line-height: 60px;
+            position: relative;
+            cursor: pointer;
+            margin-left: 500px;
+            margin-top:30px;
+            box-shadow: 5px 5px 10px 12px black;
+            color:white;
+           
+           
+        }
+       
+
+        .arrow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+                        margin-left: 500px;
+        }
+
+        .arrow-up {
+            border-top: 15px solid #ccc;
+            position: absolute;
+            bottom: -15px;
+        }
+
+        .hover-text {
+            display: none;
+            position:right;
+            background-color: rgba(240, 240, 240, 0.9);
+            border: 6px solid #ccc;
+            padding: 15px;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 4;
+                                    margin-left: 500px;
+                                    margin-top:20px
+        }
+
+        .box-container:hover .hover-text {
+            display: block;
+            
+            
+         }
+
+        .hover-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #linkButton{
+          margin-top:40px;
+          margin-left:450px;
+ 
+        }
+    </style></head>
+<body>
+  <div class="flowchart">
+<!--<center>  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SYLLABUS FOR PRELIMS EXAM</h1></center>-->
+<a href="sidebar1.html">
+<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+width="40"
+height="50"
+style="background-color:white;margin-left:30px;"
+/>
+</a>
+<center>  <p style="font-size:40px; position:center; margin-top: 5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> SYLLABUS FOR PRELIMS EXAM</b></p></center>
+      <div class="box-container">
+            <div class="box">
+            Economics         </div>
+           <!-- <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <div class="hover-text">
+                video link: <a class="hover-link" href="https://www.youtube.com/live/pukyVheMBrk?si=yBOec1s_1qYf-vG9" target="_blank">Click here</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                English
+                Language
+            </div>
+          <!--  <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <div class="hover-text">
+                video link: <a class="hover-link" href="https://youtu.be/EqLYmD1qLIA?si=hRAbqckdcn3FD4se" target="_blank">Click here</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                Numerical
+                Ability
+            </div>
+          <!--  <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <div class="hover-text">
+               video link: <a class="hover-link" href="https://www.youtube.com/live/2GlkdYFBzOs?si=n_603CHWhXmZktle" target="_blank">Click here</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                Reasoning Ability
+            </div>
+         <!--   <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <div class="hover-text">
+                video link: <a class="hover-link" href="https://www.youtube.com/live/PnO3TLOVxZM?si=tVkfCAu1KYl9OAto" target="_blank">Click here</a>
+            </div>
+           <!-- </div>
+             <div class="box-container">
+            <div class="box">
+                MYSQL
+            </div>
+            <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>
+            <div class="hover-text">
+                video link: <a class="hover-link" href="https://example.com" target="_blank">Click here</a>
+            </div>
+        </div>
+         <div class="box-container">
+            <div class="box">
+                NODEJS
+            </div>
+            
+            <div class="hover-text">
+               video link: <a class="hover-link" href="https://example.com" target="_blank">Click here</a>
+            </div>-->
+            </DIV>
+
+    <a href="prelimscatalogue.html" id="linkButton">
+   <center> <button style="color:white;width:210px;height:40px;font-size:30px;background-color:black;margin-top:40px;margin-left:60px;box-shadow:(120px 120px 120px 120px silver);border-radius:20px"><b>REFERENCE</b></button></center>
+ 
+  </a>
+  <a href="banking.html" id="linkButton">
+   <center> <button style="color:black;width:210px;height:40px;font-size:26px;background-color:grey;margin-top:20px;margin-left:500px ;border-radius:20px;"><i>PREVIOUS</i></button></center>
+ 
+  </a>
+</div>
+  <script>
+    // Add a click event listener to the button element
+    document.getElementById('linkButton').addEventListener('click', function() {
+      // Navigate to the link's URL when the button is clicked
+      window.location.href = this.href;
+    });
+  </script>
+ 
+  
+</body>
+</html>

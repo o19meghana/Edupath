@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAILWAY VACANCIES</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin-right: 30%;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0px 0px 30px black;
+        border-radius: 30px;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 20px;
+      }
+
+      .flip-card-front {
+        background-color:rgb(254,174,73);
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: #7ff839;
+        backdrop-filter: blur(50px);
+        background: rgb(132, 169, 229);
+        color: rgb(22, 1, 1);
+        transform: rotateY(180deg);
+        
+      }
+      .flip-card1 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        border-radius: 20px;
+        margin-left: 10%;
+        margin-right: 30%;
+      }
+
+      .flip-card-inner1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0px 0px 30px black;
+        border-radius: 20px;
+      }
+
+      .flip-card1:hover .flip-card-inner1 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front1,
+      .flip-card-back1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 20px;
+      }
+
+
+      .flip-card-back {
+        background-color: #7ff839;
+        backdrop-filter: blur(50px);
+        background: rgb(132, 169, 229);
+        color: rgb(22, 1, 1);
+        transform: rotateY(180deg);
+        
+      }
+
+      .flip-card-front1 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back1 {
+        background-color: #faf063;
+        color: rgb(22, 1, 1);
+        transform: rotateY(180deg);
+    
+      }
+      .centered {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        color: #215801;
+      }
+      .flip-card2 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        border-radius: 20px;
+        margin-left: 20%;
+        margin-right: 30%;
+      }
+
+      .flip-card-inner2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0px 0px 30px black;
+        border-radius: 20px;
+      }
+
+      .flip-card2:hover .flip-card-inner2 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front2,
+      .flip-card-back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 20px;
+      }
+
+      .flip-card-front2 {
+        background-color:rgb(87,190,230);
+        color: black;
+      }
+
+      .flip-card-back2 {
+        background-color: #df8efa;
+        color: rgb(22, 1, 1);
+        transform: rotateY(180deg);
+        background: rgb(132, 169, 229);
+
+      }
+      .flip-card3 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        border-radius: 20px;
+        margin-left: 30%;
+      }
+
+      .flip-card-inner3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0px 0px 30px black;
+        border-radius: 20px;
+      }
+
+      .flip-card3:hover .flip-card-inner3 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front3,
+      .flip-card-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 20px;
+      }
+
+      .flip-card-front3 {
+        background-color: rgb(61,66,74);
+        color: black;
+      }
+
+      .flip-card-back3 {
+        background-color: #fded10;
+        color: rgb(19, 16, 11);
+        transform: rotateY(180deg);
+        background: rgb(132, 169, 229);
+
+      }
+
+      .row {
+        display: flex;
+        margin-top: 7%;
+        
+        background: transparent;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(50px);
+        background-color: rgba(201, 224, 192, 0.4);
+      }
+      .column {
+        flex: 55.33%;
+        padding: 50px;
+      }
+
+      .image{
+            width:40px;
+            border-radius:40px;
+        }
+        .img-text{
+         display:inline-block;
+         vertical-align:bottom;
+        }
+        .text{
+            display:inline-block;
+            margin-left:10px;
+            font-size:35px;
+            vertical-align:bottom;
+        }
+        .block{
+            display:block;
+            margin-bottom:20px;
+            margin-top:50px;
+        }
+        
+    </style>
+  </head>
+  <body
+    style="
+      background-color:#72858C;
+      backdrop-filter:blur(1px);"
+  >
+    <div
+      style="
+        color: white;
+        font-size: 300%;
+        font-weight: 1000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;margin-top:30px;
+      "
+    >
+      <center>RAILWAYS</center>
+     
+    </div>
+
+    <div class="row" style="background-attachment: fixed; ">
+      <div class="col">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+                
+            </div>
+            <div
+              class="centered"
+              style="color:black; font-weight: 20px; padding-bottom: 100px; background-color:rgb(254,174,73);"
+            >
+              Locomotive Engineer
+            </div>
+            <div class="flip-card-back">
+            
+              <div>
+                <div class="block">
+<div class='img-text'>
+<img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D" class="image"></div>
+<div class="text"><a href="https://www.linkedin.com/jobs/search/?currentJobId=3732567825&keywords=Full%20Stack%20Developer&origin=JOBS_HOME_KEYWORD_AUTOCOMPLETE&refresh=true">linkedin</a>
+</div>
+</div>
+<div class="block">
+<div class='img-text'>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhC
+    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
+    CVI0QylTt/QAAAABJRU5ErkJggg==" class="image"></div>
+    <div class="text"><a href="https://www.naukri.com/fullstack-developer-jobs?k=fullstack%20developer&nignbevent_src=jobsearchDeskGNB">naukri</a>
+    </div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="flip-card1">
+          <div class="flip-card-inner1">
+            <div class="flip-card-front1">
+              
+              <div
+                class="centered"
+                style="color: black; font-weight: 20px; padding-bottom: 100px"
+              >
+                Railway Engineer
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div class="block">
+                <div class='img-text'>
+                <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D" class="image"></div>
+                <div class="text"><a href="https://www.linkedin.com/jobs/search/?currentJobId=3731596958&keywords=Database%20Administrator&origin=JOBS_HOME_KEYWORD_AUTOCOMPLETE&refresh=true">linkedin</a>
+                </div>
+                </div>
+                <div class="block">
+                <div class='img-text'>
+                    <img src="data:image/png;base64,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" class="image"></div>
+                    <div class="text"><a href="https://www.naukri.com/database-administrator-jobs?k=database%20administrator&nignbevent_src=jobsearchDeskGNB">naukri</a>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col">
+        <div class="flip-card2">
+          <div class="flip-card-inner2">
+            <div class="flip-card-front2">
+              
+              <div
+                class="centered"
+                style="color: black; font-weight: 20px; padding-bottom: 100px"
+              >
+                Railway Signal Engineer
+              </div>
+            </div>
+            <div class="flip-card-back2">
+              <div class="block">
+                <div class='img-text'>
+                <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D" class="image"></div>
+                <div class="text"><a href="https://www.linkedin.com/jobs/search/?currentJobId=3760312525&keywords=java%20developer&origin=JOBS_HOME_SEARCH_BUTTON&refresh=true">linkedin</a>
+                </div>
+                </div>
+                <div class="block">
+                <div class='img-text'>
+                    <img src="data:image/png;base64,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" class="image"></div>
+                    <div class="text"><a href="https://www.naukri.com/java-developer-jobs?k=java%20developer&nignbevent_src=jobsearchDeskGNB">naukri</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <div class="col">
+        <div class="flip-card3">
+          <div class="flip-card-inner3">
+            <div class="flip-card-front3">
+              
+              <div class="centered" style="color: black; font-weight: 20px; padding-bottom:100px;">
+                Railway police
+              </div>
+            </div>
+            <div class="flip-card-back3">
+              <div class="block">
+                <div class='img-text'>
+                <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D" class="image"></div>
+                <div class="text"><a href="https://www.linkedin.com/jobs/search/?currentJobId=3764783763&geoId=102713980&keywords=python%20developer&location=India&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true">linkedin</a>
+                </div>
+                </div>
+                <div class="block">
+                <div class='img-text'>
+                    <img src="data:image/png;base64,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" class="image"></div>
+                    <div class="text"><a href="https://www.naukri.com/python-developer-jobs?k=python%20developer&nignbevent_src=jobsearchDeskGNB">naukri</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+        </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+  </body>
+</html>

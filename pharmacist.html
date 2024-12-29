@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background:url("https://wallpapers.com/images/hd/pharmacy-background-bomnaifdze6cde60.jpg");
+            background-size:cover;
+           /* background: url("https://images.prismic.io//intuzwebsite/d394de11-2b7f-4a72-a3e0-c876f7356a40_Main.png?w=1200&q=75&auto=format,compress&fm=png8" );*/
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-bottom: 20px auto;
+           
+        }
+
+        .box {
+             
+            width: 300px;
+            height: 70px;
+            background: linear-gradient(#D1F3E2, #B2E5EC, #F2F4DD, #DBEAD5,#B2E5EC);
+            border: 2px  blue;
+            text-align:center;
+            line-height: 60px;
+            position: relative;
+            cursor: pointer;
+            margin-left: 200px;
+            margin-top:30px;
+            box-shadow: 5px 5px 10px 8px #9E7450;
+            color:blue;
+           
+           
+        }
+       
+
+        .arrow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+                        margin-left: 500px;
+        }
+
+        .arrow-up {
+            border-top: 15px solid #ccc;
+            position: absolute;
+            bottom: -15px;
+        }
+
+        .hover-text {
+            display: none;
+            position:right;
+            background-color: rgba(240, 240, 240, 0.9);
+            border: 6px solid #ccc;
+            padding: 15px;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 4;
+            margin-left: 500px;
+            margin-top:20px
+        }
+
+        .box-container:hover .hover-text {
+            display: block;
+            
+            
+         }
+
+        .hover-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #linkButton{
+          margin-top:40px;
+          margin-left:450px;
+ 
+        }
+        .button{
+             color:black;
+             font-size:20px;
+             background: linear-gradient(blue,white,blue);
+             width:210px;
+             height:40px;
+             margin-top:40px;
+             margin-left:60px;
+             box-shadow:(10px 10px 12px 10px silver);
+             padding-top:10px;
+             }
+    </style></head>
+<body> 
+  <div class="flowchart">
+  <p>
+   <a href="sidebar1.html">
+   <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+   width="40"
+   height="50"
+   style="background-color:white;margin-left:30px;"
+/>
+
+</a>
+<p style="font-size:40px; postion:right; margin-top:&nbsp;&nbsp; 3px; ;color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b> PHARMACISTS</b></p>
+      <div class="box-container">
+            <div class="box">
+            Medication Dispensing   </div>
+           <!-- <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <div class="hover-text">
+                video link: <a class="hover-link" href="https://youtu.be/B4imywxgqgk?si=rx_gofsDJcbRFsb3" target="_blank">Click here</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+               Patient Counsiling
+            </div>
+          <!--  <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <div class="hover-text">
+                video link: <a class="hover-link" href="https://youtu.be/axfKL5e5FxU?si=qbrDCicXANNC06Dg" target="_blank">Click here</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+               Pharmacy Management
+            </div>
+          <!--  <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>--> 
+            <div class="hover-text">
+               video link: <a class="hover-link" href="https://youtu.be/RsxFLccGPH8?si=kft9n1GGXIF9SliH" target="_blank">Click here</a>
+            </div>
+        </div>
+       <div class="box-container">
+            <div class="box">
+               Clinical Pharmacy
+            </div>
+         <!--   <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <div class="hover-text">
+                video link: <a class="hover-link" href="https://youtu.be/YkIT4HJ46o8?si=3QD-Ta7KVPDbkRPB" target="_blank">Click here</a>
+            </div>
+           </div>
+           <!-- <div class="box-container">
+            <div class="box">
+               	Corporate Counsel
+            </div>
+          <!--  <div class="arrow-container">
+                <div class="arrow arrow-up"></div>
+            </div>-->
+            <!--<div class="hover-text">
+                video link: <a class="hover-link" href="https://youtu.be/2aHNjduePM8?si=-SGOW-R9ofIfQQaW" target="_blank">Click here</a>
+            </div>
+       </div>
+         <div class="box-container">
+            <div class="box">
+                Public Defender
+            </div>
+            
+            <div class="hover-text">
+               video link: <a class="hover-link" href="https://youtu.be/PbQGhAhUSNo?si=5rksHzbfSCWVslT7" target="_blank">Click here</a>
+            </div>
+            </div>
+             <div class="box-container">
+            <div class="box">
+                Prosecutor
+            </div>
+            
+            <div class="hover-text">
+               video link: <a class="hover-link" href="https://youtu.be/_Y0KjQG7gzo?si=kKmYfv1tK-nt4zWZ" target="_blank">Click here</a>
+            </div>
+            </DIV>-->
+
+    <a href="pharmacistreference.html" id="linkButton">
+   <center><div class= "button"><!--<button style="color:white;width:210px;height:40px;font-size:30px;background-color:blue;margin-top:40px;margin-left:60px;button-shadow:(120px 120px 120px 120px silver);">--><b>REFERENCE</b></button></center>
+ 
+  </a>
+  <a href="doctorflowchart.html" id="linkButton">
+   <center> <button style="color:black;width:210px;height:40px;font-size:26px;background-image:linear-gradient(skyblue,white,skyblue);margin-top:20px;margin-left:500px;border-radius:30px"><i>PREVIOUS</i></button></center></div>
+ 
+  </a>
+</div>
+  <script>
+    // Add a click event listener to the button element
+    document.getElementById('linkButton').addEventListener('click', function() {
+      // Navigate to the link's URL when the button is clicked
+      window.location.href = this.href;
+    });
+  </script>
+ 
+  
+</body>
+</html>
