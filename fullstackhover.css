@@ -1,0 +1,80 @@
+<style>
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-bottom: 20px;
+            
+           
+        }
+
+        .box {
+             
+            width: 120px;
+            height: 60px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 60px;
+            position: relative;
+            cursor: pointer;
+            margin-left: 500px;
+            margin-top:40px;
+           
+           
+        }
+       
+
+        .arrow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+                        margin-left: 500px;
+        }
+
+        .arrow-up {
+            border-top: 15px solid #ccc;
+            position: absolute;
+            bottom: -15px;
+        }
+
+        .hover-text {
+            display: none;
+            position:right;
+            background-color: rgba(240, 240, 240, 0.9);
+            border: 6px solid #ccc;
+            padding: 15px;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 4;
+                                    margin-left: 500px;
+                                    margin-top:20px
+        }
+
+        .box-container:hover .hover-text {
+            display: block;
+            
+            
+         }
+
+        .hover-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
